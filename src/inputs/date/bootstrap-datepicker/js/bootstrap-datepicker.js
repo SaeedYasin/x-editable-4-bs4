@@ -56,7 +56,7 @@
 		if (this.o.rtl){
 			this.picker.addClass('datepicker-rtl');
 			this.picker.find('.prev i, .next i')
-						.toggleClass('icon-arrow-left icon-arrow-right');
+						.toggleClass('fas fa-chevron-left fas fa-chevron-right');
 		}
 
 
@@ -1187,9 +1187,9 @@
 		},
 		headTemplate: '<thead>'+
 							'<tr>'+
-								'<th class="prev"><i class="icon-arrow-left"/></th>'+
+								'<th class="prev"><i class="fas fa-chevron-left"/></th>'+
 								'<th colspan="5" class="datepicker-switch"></th>'+
-								'<th class="next"><i class="icon-arrow-right"/></th>'+
+								'<th class="next"><i class="fas fa-chevron-right"/></th>'+
 							'</tr>'+
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>',
