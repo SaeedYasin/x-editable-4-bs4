@@ -4890,7 +4890,7 @@ Editableform based on Twitter Bootstrap 3
 		if (this.o.rtl){
 			this.picker.addClass('datepicker-rtl');
 			this.picker.find('.prev i, .next i')
-						.toggleClass('icon-arrow-left icon-arrow-right');
+						.toggleClass('fas fa-chevron-left fas fa-chevron-right');
 		}
 
 
@@ -5048,9 +5048,9 @@ Editableform based on Twitter Bootstrap 3
 						// Clicked outside the datepicker, hide it
 						if (!(
 							this.element.is(e.target) ||
-							this.element.find(e.target).size() ||
-							this.picker.is(e.target) ||
-							this.picker.find(e.target).size()
+							//this.element.find(e.target).size() || // BS4+ gives error
+							this.picker.is(e.target) //||
+							//this.picker.find(e.target).size()    // BS4+ gives error
 						)) {
 							this.hide();
 						}
@@ -6021,9 +6021,9 @@ Editableform based on Twitter Bootstrap 3
 		},
 		headTemplate: '<thead>'+
 							'<tr>'+
-								'<th class="prev"><i class="icon-arrow-left"/></th>'+
+								'<th class="prev"><i class="fas fa-chevron-left"/></th>'+
 								'<th colspan="5" class="datepicker-switch"></th>'+
-								'<th class="next"><i class="icon-arrow-right"/></th>'+
+								'<th class="next"><i class="fas fa-chevron-right"/></th>'+
 							'</tr>'+
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>',
